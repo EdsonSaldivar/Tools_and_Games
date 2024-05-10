@@ -36,4 +36,4 @@ url=$1
 identificar_protocolo "$url"
 obtener_dominio "$url"
 
-curl "$url" -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0' | grep -o 'href="[^"#]*"' | awk -F '"' '{if ($2 !~ /^http/) print "'"$url"'" $2; else print $2}' | sort   
+curl "$url" -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0' | grep -o 'href="[^"#]*"' | awk -F '"' '{if ($2 !~ /^http/) print "'"$url"'" $2; else print $2}' | sort | uniq -u > headersobtenidos.txt  

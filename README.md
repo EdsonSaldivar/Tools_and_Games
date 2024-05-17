@@ -7,3 +7,7 @@
 # natas15.php:
   Este script esta diseñado para decifrar la contraseña de el nivel natas15 de Over The Wire obteniendola por medio de fuerza bruta al ir filtrando caracteres que resulten en una respuesta positiva del servidor sí es que existe en la contraseña,
   hasta obtener la contraseña final, para ejecutarlo solo es necesario colocar el comando: "php natas15.php" en nuestra terminal en Linux y el script iniciará automaticamente mostrando los msjs para esperar el resultado final
+
+
+# natas16.php
+  Este script esta diseñado para decifrar la contraseña de el nivel natas16 de Over The Wire ubicando la vulnerabilidad de tipo "Remote code execution (RCE)"
